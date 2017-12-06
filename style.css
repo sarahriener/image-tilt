@@ -1,0 +1,61 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+}
+
+body{
+    background: darkgrey;
+    display: flex;
+    perspective: 1000px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.container{
+    margin: auto;
+    width: 300px;
+
+}
+
+.background{
+    height: 500px;
+    background-image: url("kalen-emsley-100223.jpg");
+    background-size: cover;
+    background-position: 25% 50%;
+    padding: 15px;
+    position: relative;
+}
+
+.text{
+    color: white;
+}
+
+.border{
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+    padding: 15px;
+    border: 2px solid white;
+    z-index: 10;
+    position: relative;
+}
+
+.gradient{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(175deg, fuchsia, orange);
+    opacity: 0.3;
+    mix-blend-mode: multiply;
+    z-index: 3;
+}
+
+.gradient, .border{
+    pointer-events: none;
+}
